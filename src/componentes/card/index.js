@@ -4,7 +4,7 @@ import iconefavoritar from './favorite_outline.png'
 import desfavoritar from './favorite.png'
 import { Link } from 'react-router-dom';
 
-function Card({ id, capa, titulo }) {
+function Card({ id,titulo , capa }) {
     const { favorito, adicionafavorito } = useFavoritoContext();
      const ehfavorito = favorito.some((fav) => fav.id === id);
      const icone = !ehfavorito ? iconefavoritar : desfavoritar;
